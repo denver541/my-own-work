@@ -208,9 +208,9 @@
         setInterval(createHeart, 800);
 
         // Fix autoplay for mobile
-        document.body.addEventListener("click", function () {
-            document.getElementById("bgMusic").play();
-        });
+        // document.body.addEventListener("click", function () {
+        //     document.getElementById("bgMusic").play();
+        // });
 
         function checkPassword() {
             const correctPassword = "rajnilovesakash";
@@ -219,6 +219,7 @@
             if (entered === correctPassword) {
                 document.getElementById("passwordScreen").style.display = "none";
                 document.getElementById("mainContent").style.display = "block";
+                document.getElementById("bgMusic").play();
             } else {
                 document.getElementById("errorMsg").innerText = "Wrong Password 💔";
             }
